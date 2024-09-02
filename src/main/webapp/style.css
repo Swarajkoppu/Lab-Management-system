@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .hidden-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .image-label {
+    display: inline-block; /* Change from block to inline-block */
+    margin-right: 10px; /* Add margin for spacing between images */
+  }
+  
+  .image-label img {
+    width: auto; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Custom styles for radio button selection */
+  .hidden-radio:checked + .image-label img {
+    border-color: #007bff; /* Change the color as needed */
+  }
+  
